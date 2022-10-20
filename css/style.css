@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+body {
+  background: #ffffff;
+  font-size: 16px;
+  font-family:
+    'Roboto',
+    'Ubuntu',
+    'Helvetica Neue',
+    'Helvetica',
+    'Arial',
+    'Verdana',
+    "游ゴシック",
+    "Yu Gothic",
+    'ヒラギノ角ゴ Pro W3',
+    'Hiragino Kaku Gothic Pro',
+    'メイリオ',
+    'Meiryo',
+    'Osaka',
+    'ＭＳ Ｐゴシック',
+    sans-serif;
+}
+header{
+  width: 100%;
+  margin: 0 auto 44px;
+  background-color: #ffffff;
+}
+h1{
+  text-align: center;
+  padding: 20px 10px 16px;
+  font-size: 40px;
+  font-weight: bold;
+}
+/* 上の部分の装飾 */
+header nav ul{
+  display: flex;
+  justify-content: center;
+}
+header nav ul li{
+  width: calc(100%/12);
+  height: 70px;
+  background: #ffffff;
+  border-bottom: 6px solid #d3d3d3;
+	color: #151515;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+  margin: 0 0 1em;
+  text-align: center;
+  font-size: 15px;
+}
+/* 上の部分のうち本物のボタン */
+header nav ul li .button{
+  border-bottom: 6px solid #8b1c48;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  height: 70px;
+}
+
+header nav ul li a{
+  display: flex;    
+  justify-content: center;
+  height: 90px;
+  align-items: center;
+
+}
+header nav ul li .button:hover {
+  background: #8b1c48;
+  border-bottom: 6px solid #ffffff;
+  color: #ffffff;
+}
+
+
+main{
+  flex-basis: 920px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 62px 70px 32px 72px; 
+  width: 1240px;
+  margin: 0 auto 44px;
+}
+
+article h2{
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+article h3{
+  border-left: 8px solid #8b1c48;
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 20px; 
+  font-size: 25px;
+  font-weight: 600;
+  color: #8b1c48;
+  background-color: #f9f6f7;
+  background-position: left bottom;
+  margin-top: 30px;
+}
+article section p{
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+article section{
+  margin-bottom: 50px;
+}
+
+/* 土器一覧ページ写真リストと詳細情報のリスト */
+main article ul {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+/* 画像サイズが違うとき用 いらないかも */
+.thumb li{
+  width: calc(100%/3);
+  text-align: center;
+
+}
+
+/* 土器詳細の画像サイズ */
+.thumbnail{
+  max-width: 60%;
+  height: auto;
+}
+
+/* 土器詳細情報のリスト装飾 */
+.info{
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1.5em;
+  padding-left: 250px;
+  margin-top: 30px;
+}
+/* 説明文の装飾 */
+.comment{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 0 200px 0 200px;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+/* 一覧に戻るボタン */
+h5{
+  text-align: center;
+  }
+
+.button2{
+  display: inline-block;
+  width: 150px;
+  height: 60px;
+  color: #8b1c48;
+  background: #ffffff;
+  border: 1px solid #8b1c48;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.button2:hover{
+  background: #8b1c48;
+  color: #ffffff;
+}
+
+
+/* 上に戻るボタン */
+.pagetop {
+	color: #fff;
+	background-color: rgba(0,0,0,0.5);
+	text-decoration: none;
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	width: 3.3rem;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.pagetop:hover {
+	color: #fff !important;
+	background-color: #8b1c48;
+	text-decoration: none;
+}
+
+
+footer{
+  border-top: 8px solid #8b1c48;
+  text-align: center;
+  padding: 14px 10px 20px;
+}
+
