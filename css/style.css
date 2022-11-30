@@ -145,6 +145,10 @@ h5{
   text-align: center;
   }
 
+h6{
+    text-align: center;
+    background-color: #666666;
+  } 
 .button2{
   display: inline-block;
   width: 150px;
@@ -164,7 +168,6 @@ h5{
   background: #8b1c48;
   color: #ffffff;
 }
-
 
 /* 上に戻るボタン */
 .pagetop {
@@ -196,3 +199,7 @@ footer{
   padding: 14px 10px 20px;
 }
 
+
+.viewer{
+  background-color: #666666;
+}
