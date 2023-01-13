@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+      <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+  
+    <title>JIYU 考古学</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+      jQuery(document).ready(function() {
+      var offset = 100;
+      var duration = 500;
+      jQuery(window).scroll(function() {
+      if (jQuery(this).scrollTop() > offset) {
+      jQuery('.pagetop').fadeIn(duration);
+      } else {
+      jQuery('.pagetop').fadeOut(duration);
+      }
+      });
+      
+      jQuery('.pagetop').click(function(event) {
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, duration);
+      return false;
+      })
+      });
+      </script>
+
+  </head>
+  <body>
+    <header>
+      <h1><img src="../../images/side_title_sp.png" alt="JIYU">&nbsp;考古学</h1>
+      <nav>
+        <ul>
+          <li><a></a></li>
+          <li><a></a></li>
+          <li><a></a></li>
+          <li><a href="../../index.html" class="button">TOP</a></li>
+          <li><a href="../../iseki.html" class="button">自由学園遺跡</a></li>
+          <li><a href="../index.html" class="button">土器</a></li>
+          <li><a href="https://www.jiyu.ac.jp/" target="_blank" rel="noopener noreferrer" class="button">自由学園HP</a></li>
+          <li><a></a></li>
+          <li><a></a></li>
+          <li><a></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h3>8号住居跡 8</h3>
+        <h1><img src="../../images/doki_thumbnail/4_M1_TT.PNG" alt="土器4" class="thumbnail"></h1>
+        <h5><a href="004_3d.html" class="button2">3Dで見る</a></h5>
+        <ul class="info">
+          <li>キャリパー形深鉢土器</li>
+          <li>口径19.6cm</li>
+          <li>器高27cm</li>
+        </ul>
+<!--         <h4 class="comment">説明文</h4> -->
+<!--         <h5><a href="#" download="#" class="button2"class="button2">ダウンロード</a></h5> -->
+        
+        <h5><a href="../index.html" class="button2">一覧へ戻る</a></h5>
+      </article>
+    </main>
+
+    <footer>
+      <p><small>自由学園最高学部</small></p>
+    </footer>
+  </body>
+</html>
