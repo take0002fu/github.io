@@ -215,9 +215,24 @@ footer{
     width: 100%;
     margin: 0 auto 44px;
   }
-
+  .thumb li{
+    width: calc(100%/3);
+    text-align: center;
+  }
   img.thumbimg{
     width:calc(98%);
     text-align: center;
   }
+  .map{
+    width: calc(98%);
+  }
+}
+
+flex{
+  display: inline-block;
+  text-align: center;
+}
+
+h7{
+  text-align: center;
 }
